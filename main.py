@@ -11,7 +11,7 @@ import sympy as sp
 from sympy import Sum, Symbol
 
 
-tg_token = "6868429370:AAGtMnYIYl7NFUCE47qeZryI0eA_2E33UrU"
+tg_token = "YOUR TELEGRAM TOKEN"
 bot = Bot(tg_token)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
@@ -78,9 +78,6 @@ async def help_command(message: types.Message):
         "Для списка общих команд вы можете нажать /help\n"
         "А для списка команд для решений вы можете нажать /menu\n"
         "Наши соц.сети:\n"
-        "Twitch: https://www.twitch.tv/sinbrightly\n"
-        "YouTube: https://www.youtube.com/@Sin_Brightly\n"
-        "Instagram: https://www.instagram.com/sin_brightlyru/\n"
     )
     await message.answer(info_text, disable_web_page_preview=True)
 
